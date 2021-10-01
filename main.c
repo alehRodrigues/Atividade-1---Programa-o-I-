@@ -9,20 +9,6 @@
 #include "exercicio3.h"
 #include "exercicio4.h"
 
-char menu(char opt)
-{
-  if(isdigit(opt))
-  {
-    return opt;
-  }
-  else
-  {
-    printf("\n              Voce deve escolher um número de 0 a 9 ou ESC para sair\n");
-    return 11;
-  }
-  
-}
-
 int main(void) {
 
   char exercicioOpt = 0;

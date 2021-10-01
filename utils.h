@@ -2,7 +2,8 @@
 #include <unistd.h>   //_getch
 #include <time.h>
 
-char getch(){
+char getch()
+{
     char buf=0;
     struct termios old={0};
     fflush(stdout);
@@ -22,7 +23,21 @@ char getch(){
         perror ("tcsetattr ~ICANON");
     //printf("%c\n",buf);
     return buf;
- }
+}
+
+char menu(char opt)
+{
+  if(isdigit(opt))
+  {
+    return opt;
+  }
+  else
+  {
+    printf("\n              Voce deve escolher um número de 0 a 9 ou ESC para sair\n");
+    return 11;
+  }
+  
+}
 
 void cabecalho()
 {

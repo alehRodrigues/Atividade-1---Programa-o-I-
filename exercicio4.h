@@ -4,7 +4,7 @@ void exercicio_4()
   float salarioBruto = 0.0;
   
 
-  printf("\n  Desenvolva um programa em C que calcule o salário liquido de um funcionário a partir de seu nome e salário bruto sabendo-se que é descontado 10% para a previdência.\n");
+  printf("\n  Desenvolva um programa em C que calcule o salário liquido de um funcionário a partir de seu nome e salário bruto sabendo-se que é descontado 10 porcento para a previdência.\n");
 
   printf("\n  Informe o nome do funcionário: ");
   scanf("%s", nomeFuncionario);
