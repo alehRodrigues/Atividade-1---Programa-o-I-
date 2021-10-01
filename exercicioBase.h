@@ -5,7 +5,17 @@ void exercicio_base(char numeroExercicio, void (exerFunc)())
   system("clear");
 
   cabecalho();
-  printf("\n                                     EXERCÍCIO %c    \n", numeroExercicio);
+
+	if((int)numeroExercicio == 10)
+	{
+		printf("\n                                     EXERCÍCIO %d    \n",(int)numeroExercicio);
+	}
+	else
+	{
+		printf("\n                                     EXERCÍCIO %c    \n", numeroExercicio);
+	}
+
+  
 
   exerFunc();
 

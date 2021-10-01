@@ -1,3 +1,5 @@
+int main(void);
+
 void exercicio_2()
 {
   int numero1 = 0;
@@ -20,7 +22,7 @@ void exercicio_2()
 
   if((int)getch() != 27)
   {
-    exercicio_base(2 , exercicio_2);
+    exercicio_base('2' , exercicio_2);
   }
   
   main();

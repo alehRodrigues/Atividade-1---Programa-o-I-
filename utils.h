@@ -25,18 +25,20 @@ char getch()
     return buf;
 }
 
-char menu(char opt)
+int random_number(int min_num, int max_num)
 {
-  if(isdigit(opt))
-  {
-    return opt;
-  }
-  else
-  {
-    printf("\n              Voce deve escolher um número de 0 a 9 ou ESC para sair\n");
-    return 11;
-  }
-  
+    int result = 0, low_num = 0, hi_num = 0;
+    if (min_num < max_num)
+    {
+        low_num = min_num;
+        hi_num = max_num + 1; // include max_num in output
+    } else {
+        low_num = max_num + 1; // include max_num in output
+        hi_num = min_num;
+		}
+    srand(time(NULL));
+    result = (rand() % (hi_num - low_num)) + low_num;
+    return result;
 }
 
 void cabecalho()

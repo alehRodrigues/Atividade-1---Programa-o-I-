@@ -1,3 +1,5 @@
+int main(void);
+
 void exercicio_4()
 {
   char nomeFuncionario[10];
@@ -24,7 +26,7 @@ void exercicio_4()
 
   if((int)getch() != 27)
   {
-    exercicio_base(4 , exercicio_4);
+    exercicio_base('4', exercicio_4);
   }
   
   main();

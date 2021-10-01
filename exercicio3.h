@@ -1,3 +1,5 @@
+int main(void);
+
 void exercicio_3()
 {
   float prova1 = 0.0;
@@ -27,7 +29,7 @@ void exercicio_3()
 
   if((int)getch() != 27)
   {
-    exercicio_base(3 , exercicio_3);
+    exercicio_base('3' , exercicio_3);
   }
   
   main();
