@@ -22,5 +22,4 @@ void exercicio_1()
     exercicio_base('1' , exercicio_1);
   }
   
-  main();
 }

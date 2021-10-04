@@ -8,7 +8,7 @@ void exercicio_10()
 	int notas10 = 0;
 	int valorSaqueRestante = 0;
 
-  printf("\n  Suponha que um caixa eletrônico disponha apenas de notas de R$50,00, R$20,00 e R$10,00. Considerando que um cliente queira realizar um saque (de um valor inteiro) qualquer desenvolva um programa em C que mostre o número otimzado de notas com os seus respectivos valores bem como o valor do saque.\n");
+  printf("\n  Suponha que um caixa eletrônico disponha apenas de notas de R$50,00, R$20,00 e R$10,00. Considerando que um cliente queira realizar um saque (de um valor inteiro) qualquer, desenvolva um programa em C que mostre o número otimzado de notas com os seus respectivos valores bem como o valor do saque.\n");
 
   printf("\n  Informe o valor que gostaria de sacar: ");
   scanf("%d", &valorSaque);
@@ -56,13 +56,11 @@ void exercicio_10()
 	printf("\n  Número de Notas de R$10,00: %d", notas10);
 	printf("\n  Valor do saque é de: R$%d,00", (notas10*10)+(notas20*20)+(notas50*50));
   
-  printf("\n               Pressione ESC para voltar ou qualquer tecla para repetir\n");
+  printf("\n\n               Pressione ESC para voltar ou qualquer tecla para repetir\n");
 
   if((int)getch() != 27)
   {
     exercicio_base((char)10 , exercicio_10);
   }
-  
-  main();
   
 }

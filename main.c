@@ -16,30 +16,31 @@
 #include "exercicio9.h"
 #include "exercicio10.h"
 
+//Funções no final
 char menu(char opt);
 
 
 int main(void) {
 
-  char exercicioOpt = 0;
-  bool escape = true;
-
-  system("clear");
-
-  cabecalho();
-
-  printf("\n               Informe qual o numero do exercício gostaria de avaliar    ");
-  printf("\n                                         ou");
-  printf("\n                                Digite ESC para sair                   \n\n");
-
-  for(int i=1; i<10; i++)
-  {
-    printf("                               Exercício - %d (Digite %d)\n",i, i);
-  }
-	printf("                               Exercício - %d (Digite %d)\n",10, 0);
+	bool escape = true;
+	char exercicioOpt = 0;
 
   do
   {
+  	system("clear");
+
+  	cabecalho();
+		printf("\n\t\t\t\tInforme qual o numero do exercício gostaria de avaliar");
+  	printf("\n\t\t\t\t\t\t\t\t\t\t ou");
+  	printf("\n\t\t\t\t\t\t\t\tDigite ESC para sair\n\n");
+
+  	for(int i=1; i<10; i++)
+  	{
+  	  printf("\t\t\t\t\t\t\t\tExercício - %d (Digite %d)\n",i, i);
+  	}
+
+		printf("\t\t\t\t\t\t\t\tExercício - %d (Digite %d)\n",10, 0);
+
     exercicioOpt = getch();
 
     if((int)exercicioOpt == 27)
@@ -87,7 +88,7 @@ int main(void) {
   }while(escape);
   
   
-  printf("\n                        Obrigado por avaliar minha atividade!\n");
+  printf("\n\t\t\t\t\tObrigado por avaliar minha atividade!\n");
   return 0;
   
 }
@@ -100,7 +101,7 @@ char menu(char opt)
   }
   else
   {
-    printf("\n              Voce deve escolher um número de 0 a 9 ou ESC para sair\n");
+    printf("\n\t\t\t\t\t\t\tVoce deve escolher um número de 0 a 9 ou ESC para sair\n");
     return 11;
   }
   

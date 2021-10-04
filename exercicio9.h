@@ -7,7 +7,7 @@ void exercicio_9()
   float preco = 0.0;
   int txPetrobas = random_number(3,13);
 
-  printf("\n  Desenvolva um programa em C que calcule os gastos de combustível numa viagem dados a distância (km), o consumo do veículo em (km/L) e o valor do combustível (R$/L). \n");
+  printf("\n  Desenvolva um programa em C que calcule os gastos de combustível numa viagem dadas a distância (km), o consumo do veículo em (km/L) e o valor do combustível (R$/L). \n");
 
   printf("\n  Informe a distância da viagem em km: ");
   scanf("%f", &distancia);
@@ -34,7 +34,5 @@ void exercicio_9()
   {
     exercicio_base('9', exercicio_9);
   }
-  
-  main();
   
 }

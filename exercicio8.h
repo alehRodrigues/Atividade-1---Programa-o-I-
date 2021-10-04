@@ -18,6 +18,4 @@ void exercicio_8()
     exercicio_base('8' , exercicio_8);
   }
   
-  main();
-  
 }

@@ -25,6 +25,4 @@ void exercicio_2()
     exercicio_base('2' , exercicio_2);
   }
   
-  main();
-  
 }
