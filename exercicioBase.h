@@ -15,8 +15,6 @@ void exercicio_base(char numeroExercicio, void (exerFunc)())
 		printf("\n                                     EXERCÍCIO %c    \n", numeroExercicio);
 	}
 
-  
-
   exerFunc();
 
 }

@@ -1,5 +1,5 @@
-#include <termios.h>  //_getch
-#include <unistd.h>   //_getch
+#include <termios.h>  
+#include <unistd.h>   
 #include <time.h>
 
 char getch()

@@ -1,13 +1,30 @@
 int main(void);
 
+/*
+	prova1 (peso 2) -> (nota * peso) => |
+	prova2 (peso 3) -> (nota * peso) => |=> /soma dos pesos
+	prova3 (peso 5) -> (nota * peso) => |
+
+	10   * 2 = 20
+	10   * 3 = 30
+	10   * 5 = 50
+
+	soma = 100
+	resultado = soma / 10 => 10
+	
+*/
+
 void exercicio_3()
 {
+
   float prova1 = 0.0;
   float prova2 = 0.0;
   float prova3 = 0.0;
+	float resultado = 0;
   
 
   printf("\n  Desenvolva um programa em C que calcule a média de três provas com peso 2, 3 e 5 respectivamente.\n");
+	
   printf("\n  Informe a nota da primeira prova: ");
   scanf("%f",&prova1);
   printf("\n  Informe a nota da segunda prova: ");
@@ -23,7 +40,9 @@ void exercicio_3()
   if(prova2 < 0) prova2 = 0;
   if(prova3 < 0) prova3 = 0;
 
-  printf("\n                              O resultado da média é:\n                  ((%.1f * 2) + (%.1f * 3) + (%.1f * 5)) / 10 = %.1f\n",prova1, prova2, prova3, ((prova1*2)+(prova2*3)+(prova3*5))/10 );
+	resultado = ((prova1 * 2) + (prova2 * 3) + (prova3 * 5)) / 10;
+
+  printf("\n                              O resultado da média é:\n                  ((%.1f * 2) + (%.1f * 3) + (%.1f * 5)) / 10 = %.1f\n",prova1, prova2, prova3,resultado);
 
   printf("\n               Pressione ESC para voltar ou qualquer tecla para repetir\n");
 
